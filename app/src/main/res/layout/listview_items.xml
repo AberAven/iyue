@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listView_items"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/listView_items_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:lines="1"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/listView_items_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/listView_items_image"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:src="@drawable/image1"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/listView_items_timeIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/listView_items_timeMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="12dp"
+            android:layout_toRightOf="@+id/listView_items_timeIcon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/listView_items_manIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/listView_items_timeIcon"/>
+
+        <TextView
+            android:id="@+id/listView_items_manMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人数限制"
+            android:textSize="12dp"
+            android:layout_below="@+id/listView_items_timeMsg"
+            android:layout_toRightOf="@+id/listView_items_manIcon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:id="@+id/listView_items_locationIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/listView_items_manIcon"/>
+
+        <TextView
+            android:id="@+id/listView_items_locationMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地点"
+            android:textSize="12dp"
+            android:layout_below="@+id/listView_items_manMsg"
+            android:layout_toRightOf="@+id/listView_items_locationIcon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
